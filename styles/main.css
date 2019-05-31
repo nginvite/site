@@ -98,7 +98,7 @@ body {
   margin-bottom: 30px;
 }
 
-/* Card Feature */
+/* Card Feature - benefit */
 .card {
   border-color: transparent !important;
   -webkit-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.12);
@@ -107,4 +107,18 @@ body {
 
 .card-feature {
   margin-top: -5em;
+}
+
+.card-feature img {
+  margin-top: 1em;
+  text-align: center;
+}
+
+.text-benefit {
+  margin-top: 1em;
+}
+
+.text-benefit p {
+  font-weight: 200 !important;
+  color: gray;
 }
