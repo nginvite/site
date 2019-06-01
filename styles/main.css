@@ -19,6 +19,11 @@ body {
   font-family: 'Rubik', sans-serif !important;
 }
 
+a {
+  text-decoration: none !important;
+  transition: all 0.2s ease-out !important;
+}
+
 .title {
   font-family: 'GoogleSans-Bold', sans-serif;
   letter-spacing: -0.08em;
@@ -44,9 +49,9 @@ body {
   transition: 1.25s;
   transform: translateY(0);
 
-  -webkit-box-shadow: -2px 15px 22px 6px rgba(255, 133, 190, 0.274);
-  -moz-box-shadow: -2px 15px 22px 6pxrgba(255, 133, 190, 0.274);
-  box-shadow: -2px 15px 22px 6px rgba(255, 133, 190, 0.274);
+  -webkit-box-shadow: -2px 5px 22px 6px rgba(255, 133, 190, 0.274);
+  -moz-box-shadow: -2px 5px 22px 6pxrgba(255, 133, 190, 0.274);
+  box-shadow: -2px 5px 22px 6px rgba(255, 133, 190, 0.274);
 }
 
 .btn-primary:hover {
@@ -95,8 +100,33 @@ body {
 
 #buatSekarang {
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 7px;
 }
+
+#lihatDemo {
+  color: #6600ff !important;
+  height: 20px;
+  margin-top: 10px !important;
+  margin-bottom: 40px;
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+#lihatDemo div {
+  font-size: 14px !important;
+  vertical-align: middle;
+}
+
+#lihatDemo div:hover {
+  color: #5200ce !important;
+  transition: all 0.2s ease-out !important;
+}
+
+#lihatDemo i {
+  vertical-align: middle;
+  font-size: 20px !important;
+}
+
 
 /* Card Feature - benefit */
 .card {
@@ -106,19 +136,34 @@ body {
 }
 
 .card-feature {
-  margin-top: -5em;
+  margin-top: -70px;
+}
+
+.card-body-feature {
+  padding: 30px !important;
 }
 
 .card-feature img {
-  margin-top: 1em;
+  margin-top: 20px;
+  margin-bottom: 20px;
   text-align: center;
-}
-
-.text-benefit {
-  margin-top: 1em;
+  border-radius: 8px;
 }
 
 .text-benefit p {
   font-weight: 200 !important;
   color: gray;
+}
+
+.medium-title {
+  font-family: 'GoogleSans-Regular', sans-serif;
+  letter-spacing: -0.04em;
+  font-size: 24px !important;
+  font-weight: 400;
+}
+
+.text-secondary {
+  font-weight: 200 !important;
+  color: gray;
+  font-size: 17px;
 }
