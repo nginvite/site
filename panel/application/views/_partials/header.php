@@ -132,15 +132,15 @@ Developed by Haerul Muttaqin - Nov 2020
                                         USER NAME
                                     </span>
                                     <br>
-                                    <small>Premium Member</small>
+                                    <small style="color:#b7bbc0">Premium Member</small>
                                 </span>
                             </div>
                         </div>
                         <!--MENU QUERY-->
                         <!-- Query Menu-->
 
-                        <li class="nav-item <?php if ('Dashboard' == $title) echo 'menu-open' ?>">
-                            <a href="<?= base_url('dashboard')?>" class="nav-link">
+                        <li class="nav-item <?php if ('Home' == $title) echo 'menu-open' ?>">
+                            <a href="<?= base_url('home')?>" class="nav-link">
                                 <i class="cil-home nav-icon"></i>
                                 <p style="text-transform: capitalize;">Home</p>
                             </a>

@@ -132,6 +132,10 @@ $autoload['language'] = array();
 |
 |	$autoload['model'] = array('first_model' => 'first');
 */
+<<<<<<< HEAD
 $autoload['model'] = array(
     'User_model' => 'user', 'Pengguna_model'
 );
+=======
+$autoload['model'] = array();
+>>>>>>> 3fa4b74c4e8007d152947a12fb2c224878ad1416

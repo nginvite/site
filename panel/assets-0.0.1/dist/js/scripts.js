@@ -33,13 +33,6 @@ $(function () {
         goBack();
     });
 
-    /*SIDEBAR STATE*/
-    $('.sidebar-state').on('click', function () {
-        $.ajax({
-            url: BASE_URL + '/menu/set_sidebar_state/'
-        });
-    });
-
     /*MANIPULATE INPUT IMAGE*/
     $('.custom-file-input').on('change', function () {
         let fileName = $(this).val().split('\\').pop();
@@ -95,7 +88,7 @@ function logout(baseUrl) {
     $('.logout').click(function () {
         Swal.fire(alertLogout).then((result) => {
             if (result.value) {
-                window.location.href = baseUrl + 'login/logout';
+                window.location.href = baseUrl + 'login/prosses_logout';
             }
         });
     })
