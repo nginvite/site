@@ -21,11 +21,20 @@ class Login extends CI_Controller
         $this->form_validation->set_rules('password', 'Password', 'required');
         if ($this->form_validation->run() == TRUE) {
             $user = $this->db->get_where('tabel_pengguna', array(
-                'email' => $this->input->post('email'),
-                'password' => $this->input->post('password')
+                'email' => $this->input->post('email')
             ))->row_array();
             if ($user['email'] == $this->input->post('email')) {
-                redirect('home');
+                if (password_verify($this->input->post('password'), $user['password'])) {
+                    $this->session->set_userdata($user);
+                    redirect('home');
+                } else {
+                    $this->session->set_flashdata('error', '<div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    Email atau katasandi tidak sesuai!
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>');
+                }
             } else {
                 $this->session->set_flashdata('error', '<div class="alert alert-warning alert-dismissible fade show" role="alert">
                     Email atau katasandi tidak sesuai!

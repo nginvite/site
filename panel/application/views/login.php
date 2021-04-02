@@ -11,8 +11,8 @@ Developed by Haerul Muttaqin - Nov 2020
 
     <title><?= app_name() ?> — Login</title>
     <!-- Ionicons -->
+    <link rel="stylesheet" href="<?= base_url('assets-' . app_version() . '/') ?>plugins/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="<?= base_url('assets-' . app_version() . '/') ?>dist/css/style.css">
-    <link rel="stylesheet" href="<?= base_url('assets-' . app_version() . '/') ?>plugins/coreui-icons/css/all.min.css">
     <link rel="stylesheet" href="<?= base_url('assets-' . app_version() . '/') ?>dist/css/adminlte.css">
     <link rel="stylesheet" href="<?= base_url('assets-' . app_version() . '/') ?>plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
     <link rel="shortcut icon" href="<?= base_url('assets-' . app_version() . '/') ?>dist/img/favicon.png" />
@@ -38,25 +38,64 @@ Developed by Haerul Muttaqin - Nov 2020
                         <small class="form-text text-danger"><?php echo form_error('email'); ?></small>
                     </div>
                     <div class="mb-2">
-                        <label for="password">Password</label>
-                        <input type="password" class="form-control" id="password" name="password" placeholder="Password">
-                        <small class="form-text text-danger"><?php echo form_error('password'); ?></small>
+                        <label>Password</label>
+                        <div class="input-group" id="show_hide_password1">
+                            <input name="password" class="form-control" type="password" placeholder="Password">
+                            <div class="input-group-append">
+                                <a class="input-group-text" href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="checkbox mb-3">
                         <label>
-                            <input type="checkbox" value="remember-me"> Remember me
+                            <input type="checkbox" value="remember-me"> Tetap masuk
                         </label>
                     </div>
                     <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+                    <p class="mt-2">Belum punya akun? <a href="<?php echo base_url('registrasi'); ?>">daftar disini</a> </p>
                     <p class="mt-5 mb-1 text-muted text-center">© <?= date('Y', time()) ?></p>
                 </form>
             </div>
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="<?= base_url('assets-' . app_version() . '/') ?>plugins/bootstrap/js/bootstrap.bundle.js"></script>
+
+    <script src="<?= base_url('assets-' . app_version() . '/') ?>plugins/jquery/jquery-3.3.1.js"></script>
+
+    <script src="<?= base_url('assets-' . app_version() . '/') ?>plugins/bootstrap/js/bootstrap.bundle.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#show_hide_password1 a").on('click', function(event) {
+                event.preventDefault();
+                if ($('#show_hide_password1 input').attr("type") == "text") {
+                    $('#show_hide_password1 input').attr('type', 'password');
+                    $('#show_hide_password1 i').addClass("fa-eye-slash");
+                    $('#show_hide_password1 i').removeClass("fa-eye");
+                } else if ($('#show_hide_password1 input').attr("type") == "password") {
+                    $('#show_hide_password1 input').attr('type', 'text');
+                    $('#show_hide_password1 i').removeClass("fa-eye-slash");
+                    $('#show_hide_password1 i').addClass("fa-eye");
+                }
+            });
+
+            $("#show_hide_password2 a").on('click', function(event) {
+                event.preventDefault();
+                if ($('#show_hide_password2 input').attr("type") == "text") {
+                    $('#show_hide_password2 input').attr('type', 'password');
+                    $('#show_hide_password2 i').addClass("fa-eye-slash");
+                    $('#show_hide_password2 i').removeClass("fa-eye");
+                } else if ($('#show_hide_password2 input').attr("type") == "password") {
+                    $('#show_hide_password2 input').attr('type', 'text');
+                    $('#show_hide_password2 i').removeClass("fa-eye-slash");
+                    $('#show_hide_password2 i').addClass("fa-eye");
+                }
+            });
+        });
+    </script>
+
 </body>
 
 </html>

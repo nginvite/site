@@ -128,11 +128,11 @@ Developed by Haerul Muttaqin - Nov 2020
                             </a>
                             <div class="info ml-2" style="color: white;">
                                 <span href="#" class="d-block text-truncate" style="max-width: 170px !important;" data-toggle="tooltip" data-placement="bottom" title="">
-                                    <span class="font-weight-light" style="color:#b7bbc7">
-                                        USER NAME
+                                    <span class="font-weight-bold" style="color:#b7bbc7">
+                                        <?= $this->session->userdata('nama_pengguna') ?>
                                     </span>
                                     <br>
-                                    <small style="color:#b7bbc0">Premium Member</small>
+                                    <small style="color:#b7bbc0">Member</small>
                                 </span>
                             </div>
                         </div>
