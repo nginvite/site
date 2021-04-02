@@ -28,15 +28,19 @@ Developed by Haerul Muttaqin - Nov 2020
                     <div class="text-center">
                         <img class="mb-4" src="<?= base_url('assets-' . app_version() . '/') ?>dist/img/logo.svg" alt="" width="72" height="57">
                     </div>
-                    <h1 class="h3 mb-3 fw-normal text-center">Please sign in</h1>
+                    <h1 class="h3 mb-3 fw-normal text-center">Silahkan Masuk!</h1>
+
+                    <?php echo $this->session->flashdata('error'); ?>
 
                     <div class="mb-3">
                         <label for="email">Email address</label>
-                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                        <input type="text" class="form-control" name="email" id="email" placeholder="name@example.com">
+                        <small class="form-text text-danger"><?php echo form_error('email'); ?></small>
                     </div>
                     <div class="mb-2">
                         <label for="password">Password</label>
-                        <input type="password" class="form-control" id="password" placeholder="Password">
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                        <small class="form-text text-danger"><?php echo form_error('password'); ?></small>
                     </div>
 
                     <div class="checkbox mb-3">
@@ -51,6 +55,7 @@ Developed by Haerul Muttaqin - Nov 2020
         </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="<?= base_url('assets-' . app_version() . '/') ?>plugins/bootstrap/js/bootstrap.bundle.js"></script>
 </body>
 
