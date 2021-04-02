@@ -22,40 +22,50 @@ Developed by Haerul Muttaqin - Nov 2020
 <body>
 
     <div class="row mt-4">
-        <div class="col-lg-3 mx-auto mt-4">
+        <div class="col-lg-5 mx-auto mt-4">
             <div class="card p-4">
-                <form action="<?php echo base_url('login/proses_login'); ?>" method="POST">
+                <form action="<?php echo base_url('Registrasi/proses_registrasi'); ?>" method="POST">
                     <div class="text-center">
                         <img class="mb-4" src="<?= base_url('assets-' . app_version() . '/') ?>dist/img/logo.svg" alt="" width="72" height="57">
                     </div>
-                    <h1 class="h3 mb-3 fw-normal text-center">Silahkan Masuk!</h1>
-
-                    <?php echo $this->session->flashdata('error'); ?>
+                    <h1 class="h3 mb-3 fw-normal text-center">Registration</h1>
 
                     <div class="mb-3">
-                        <label for="email">Email address</label>
-                        <input type="text" class="form-control" name="email" id="email" placeholder="name@example.com">
-                        <small class="form-text text-danger"><?php echo form_error('email'); ?></small>
+                        <label for="username">Username</label>
+                        <input type="text" name="username" class="form-control" id="username" placeholder="username">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="no_hp">No Handphone</label>
+                        <input type="phone" name="no_hp" class="form-control" id="no_hp" placeholder="08xxxx">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="domain">Name Domain</label>
+                        <input type="text" name="domain" class="form-control" id="domain" placeholder="domain">
                     </div>
                     <div class="mb-2">
                         <label for="password">Password</label>
-                        <input type="password" class="form-control" id="password" name="password" placeholder="Password">
-                        <small class="form-text text-danger"><?php echo form_error('password'); ?></small>
+                        <input type="password" name="password" class="form-control" id="password" placeholder="password">
                     </div>
 
-                    <div class="checkbox mb-3">
+                    <!-- <div class="checkbox mb-3">
                         <label>
                             <input type="checkbox" value="remember-me"> Remember me
                         </label>
-                    </div>
-                    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-                    <p class="mt-5 mb-1 text-muted text-center">© <?= date('Y', time()) ?></p>
+                    </div> -->
+                    <button class="w-100 btn btn-lg btn-primary mt-3" type="submit">Sign Up</button>
+                    <p class="mt-3 mb-1 text-muted text-center">© <?= date('Y', time()) ?></p>
                 </form>
             </div>
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="<?= base_url('assets-' . app_version() . '/') ?>plugins/bootstrap/js/bootstrap.bundle.js"></script>
 </body>
 

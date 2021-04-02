@@ -1,9 +1,3 @@
-<div>
-    <?php
-    $this->load->view('_partials/alert');
-    ?>
-</div>
-
 </div>
 <!-- /.content-wrapper -->
 
@@ -25,9 +19,6 @@
 </div>
 <script src="<?= base_url('assets-'.app_version().'/') ?>plugins/jquery/jquery-3.3.1.js"></script>
 <script data-pace-options='{ "ajax": false }' src="<?= base_url('assets-'.app_version().'/') ?>plugins/progress/pace.min.js"></script>
-<script>
-
-</script>
 <script src="<?= base_url('assets-'.app_version().'/') ?>plugins/jquery-ui/jquery-ui.min.js"></script>
 <script src="<?= base_url('assets-'.app_version().'/') ?>plugins/popper/umd/popper.min.js"></script>
 <script src="<?= base_url('assets-'.app_version().'/') ?>plugins/bootstrap/js/bootstrap.bundle.js"></script>

@@ -88,9 +88,6 @@ class CI_Controller {
 
         $this->load->helper('url');
         $this->load->helper('app');
-        $this->load->model('Menu_model', 'menu');
-        $this->load->model('User_model', 'user');
-        $this->load->model('Master_model', 'master');
     }
 
 	// --------------------------------------------------------------------
