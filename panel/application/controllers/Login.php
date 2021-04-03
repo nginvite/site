@@ -8,7 +8,9 @@ class Login extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        is_logged_in();
+        if ($this->session->userdata('id_pengguna')) {
+            redirect('undangan');
+        }
     }
 
     public function index()

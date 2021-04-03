@@ -1,6 +1,6 @@
     <!-- Main content -->
 
-    <form class="content" action="<?php echo base_url('buatundangan/proses_buat_undangan'); ?>" method="post">
+    <form class="content" action="<?php echo base_url('buatundangan/proses_buat_undangan'); ?>" method="post" enctype="multipart/form-data">
 
         <section class="content">
             <div class="container-fluid">
@@ -100,17 +100,17 @@
                                     <div class="col-lg-12">
                                         <div class="row">
                                             <div class="form-group col-lg-6">
-                                                <label for="putra_dari_ibu">Mempelai Pria</label>
+                                                <label for="photo_pria">Mempelai Pria</label>
                                                 <div class="custom-file">
-                                                    <input type="file" class="custom-file-input" name="foto_pria" id="foto_pria">
-                                                    <label class="custom-file-label" for="customFile">Pilih foto</label>
+                                                    <input type="file" class="custom-file-input" name="photo_pria" id="photo_pria" value="<?php echo set_value('photo_pria') ?>">
+                                                    <label class="custom-file-label" for="photo_pria">Pilih foto</label>
                                                 </div>
                                             </div>
                                             <div class="form-group col-lg-6">
-                                                <label for="putra_dari_ibu">Mempelai Wanita</label>
+                                                <label for="photo_wanita">Mempelai Wanita</label>
                                                 <div class="custom-file">
-                                                    <input type="file" class="custom-file-input" name="foto_wanita" id="foto_wanita">
-                                                    <label class="custom-file-label" for="customFile">Pilih foto</label>
+                                                    <input type="file" class="custom-file-input" name="photo_wanita" id="photo_wanita" value="<?php echo set_value('photo_wanita') ?>">
+                                                    <label class="custom-file-label" for="photo_wanita">Pilih foto</label>
                                                 </div>
                                             </div>
                                         </div>

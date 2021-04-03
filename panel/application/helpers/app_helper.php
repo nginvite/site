@@ -23,9 +23,8 @@ function is_logged_in()
 {
     $ci = get_instance();
     $ci->load->helper('url');
-    if (!$ci->session->userdata('id_pengguna')) {
-        $ci->session->set_userdata(array('redirec_url' => current_url()));
-        redirect('login');
+    if (!$ci->session->userdata()) {
+        redirect('/');
     }
 }
 

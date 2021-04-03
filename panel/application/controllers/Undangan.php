@@ -13,6 +13,7 @@ class Undangan extends CI_Controller
 
     public function index() {
         $data['title'] = "Undangan";
+        $data['undangan'] = $this->Undangan_model->undanganByIdPengguna($this->session->userdata('id_pengguna'));
         $this->load->view('_partials/header', $data);
         $this->load->view('undangan', $data);
         $this->load->view('_partials/footer', $data);
