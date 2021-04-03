@@ -4,12 +4,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Login extends CI_Controller
 {
-
-    public function __construct()
-    {
-        parent::__construct();
-    }
-
     public function index()
     {
         $this->load->view('login');
@@ -26,7 +20,8 @@ class Login extends CI_Controller
             if ($user['email'] == $this->input->post('email')) {
                 if (password_verify($this->input->post('password'), $user['password'])) {
                     $this->session->set_userdata($user);
-                    redirect('home');
+                    redirect('undangan');
+                    exit;
                 } else {
                     $this->session->set_flashdata('error', '<div class="alert alert-warning alert-dismissible fade show" role="alert">
                     Email atau katasandi tidak sesuai!

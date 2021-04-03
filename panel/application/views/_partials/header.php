@@ -139,10 +139,17 @@ Developed by Haerul Muttaqin - Nov 2020
                         <!--MENU QUERY-->
                         <!-- Query Menu-->
 
-                        <li class="nav-item <?php if ('Home' == $title) echo 'menu-open' ?>">
-                            <a href="<?= base_url('home')?>" class="nav-link">
+                        <li class="nav-item <?php if ('Undangan' == $title) echo 'menu-open' ?>">
+                            <a href="<?= base_url('undangan') ?>" class="nav-link">
                                 <i class="cil-home nav-icon"></i>
-                                <p style="text-transform: capitalize;">Home</p>
+                                <p style="text-transform: capitalize;">Undangan</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item <?php if ('Buat Baru' == $title) echo 'menu-open' ?>">
+                            <a href="<?= base_url('buatundangan') ?>" class="nav-link">
+                                <i class="cil-note-add nav-icon"></i>
+                                <p style="text-transform: capitalize;">Buat Baru</p>
                             </a>
                         </li>
 
@@ -153,6 +160,8 @@ Developed by Haerul Muttaqin - Nov 2020
             </div>
             <!-- /.sidebar -->
         </aside>
+
+        <script src="<?= base_url('assets-' . app_version() . '/') ?>plugins/jquery/jquery-3.3.1.js"></script>
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">

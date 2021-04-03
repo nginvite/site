@@ -5,8 +5,8 @@ function check_menu_access()
     $ci = get_instance();
     $ci->load->helper('url');
 
-    if (!$ci->session->userdata('user_sid')) {
-        redirect('auth');
+    if (!$ci->session->userdata('id')) {
+        redirect('login');
     } else {
         $menu = str_replace(base_url(), '', current_url());
 
@@ -23,9 +23,9 @@ function is_logged_in()
 {
     $ci = get_instance();
     $ci->load->helper('url');
-    if (!$ci->session->userdata('user_sid')) {
+    if (!$ci->session->userdata('id_pengguna')) {
         $ci->session->set_userdata(array('redirec_url' => current_url()));
-        redirect('auth');
+        redirect('login');
     }
 }
 
