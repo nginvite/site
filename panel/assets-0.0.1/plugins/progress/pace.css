@@ -12,8 +12,8 @@
 }
 
 .pace .pace-progress {
-    background: #ff248a;
-    background: linear-gradient(90deg, #ff248a 0%, #f000f8 100%);
+    background: #f71b64;
+    background: linear-gradient(90deg, #ff248a 0%, #f71b64 100%);
     position: fixed;
     z-index: 2000;
     top: 0;
