@@ -8,9 +8,6 @@ class Login extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        if ($this->session->userdata('id_pengguna')) {
-            redirect('undangan');
-        }
     }
 
     public function index()
@@ -53,7 +50,7 @@ class Login extends CI_Controller
 
     public function prosses_logout()
     {
-        $this->session->unset_userdata('user');
+        $this->session->set_userdata(array('id_pengguna'=>null));
         redirect('login');
     }
 }
