@@ -1,0 +1,351 @@
+.bg-haerul {
+  background: #27a0e6;
+}
+
+.post-content p{
+  font-family: 'Rubik', sans-serif !important;
+  margin: 1em 0;
+}
+
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6,
+.card-title {
+  font-family: 'Rubik', sans-serif;
+  margin: 1em 0;
+}
+
+.post-content img {
+  max-width: 100%;
+}
+
+.sidenav-trigger {
+  color: #444 !important;
+  margin-left: 5px !important;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+  font-size: 1.2rem !important;
+}
+
+nav .brand-logo img {
+  height: 35px;
+  width: 35px;
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 951px) {
+  nav .brand-logo img {
+    margin-left: 35px !important;
+  }
+
+  .sidenav-trigger-first {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  nav .brand-logo img {
+    margin-left: 35px !important;
+  }
+  .sidenav-trigger-first {
+    display: none;
+  }
+}
+
+p {
+  line-height: 2rem;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255, 255, 255, .9);
+}
+
+.parallax-container .section {
+  width: 100%;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+/* carousel Flickity */
+
+.owl-nav {
+  text-align: center !important;
+}
+
+.owl-arrow {
+  margin: 10px;
+}
+
+.btn-lihatsemua {
+  margin-right: -17px;
+}
+
+.card .card-image img {
+  height: auto;
+  width: 100%;
+  border-top-left-radius: 6px !important;
+  border-top-right-radius: 6px !important;
+}
+
+#navbar-auto {
+  position: fixed;
+  top: -70px;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+}
+
+nav .sidenav-trigger-first {
+  float: left;
+  position: relative;
+  z-index: 1;
+  height: 56px;
+  margin: 0 18px;
+}
+
+nav .sidenav-trigger-first i {
+  height: 56px;
+  line-height: 56px;
+  margin-left: -15px;
+}
+
+nav,
+nav .nav-wrapper i,
+nav a.sidenav-trigger-first,
+nav a.sidenav-trigger-first i,
+.nav-first {
+  height: 64px;
+  line-height: 64px;
+  background-color: transparent !important;
+  color: #444;
+}
+
+.nav-first {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.parallax img {
+  filter: opacity(0.2);
+}
+
+#menu-first {
+  transition: all .3s ease;
+  background-color: transparent;
+}
+
+#menu-first.active {
+  animation: pulse 3s;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: transparent;
+  }
+
+  20% {
+    background-color: rgba(0, 0, 0, 0.178);
+  }
+
+  30% {
+    background-color: transparent;
+  }
+}
+
+.pagination .disabled i {
+  color: rgb(235, 235, 235) !important;
+}
+
+.pagination li.active {
+  background-color: #e5f5ff !important;
+}
+
+.pagination li i {
+  color: #a3a3a3 !important;
+}
+
+.pagination li.active a {
+  color: rgb(0, 145, 234) !important;
+}
+
+.pagination li a {
+  color: rgb(150, 150, 150) !important;
+}
+
+
+@media only screen and (max-width:400px) {
+  .card-post {
+    height: 23em !important;
+  }
+  .post-title {
+    font-size: 2.8em !important;
+  }
+}
+
+@media only screen and (max-width:610px) {
+  .card-post {
+    height: 20em;
+  }
+  .post-title {
+    font-size: 3em !important;
+  }
+}
+
+@media only screen and (max-width:729) {
+  .card-post {
+    height: 20em !important;
+  }
+  .post-title {
+    font-size: 2.8em !important;
+  }
+}
+
+@media only screen and (max-width:960px) {
+  .card-post {
+    height: 23em !important;
+  }
+  .post-title {
+    font-size: 2.8em !important;
+  }
+}
+
+
+@media only screen and (max-width:994px) {
+  .card-post {
+    height: 27em !important;
+  }
+  .post-title {
+    font-size: 2.8em !important;
+  }
+}
+
+@media only screen and (max-width:1010px) {
+  .card-post {
+    height: 24em !important;
+  }
+  .post-title {
+    font-size: 3em !important;
+  }
+}
+
+@media only screen and (max-width:1119px) {
+  .card-post {
+    height: 23em !important;
+  }
+  .post-title {
+    font-size: 2.8em !important;
+  }
+}
+
+@media only screen and (max-width:1080px) {
+  .card-post {
+    height: 22em !important;
+  }
+  .post-title {
+    font-size: 3em !important;
+  }
+}
+
+@media only screen and (max-width:1029px) {
+  .card-post {
+    height: 24em !important;
+  }
+  .post-title {
+    font-size: 3em !important;
+  }
+}
+
+
+@media only screen and (max-width:2000px) {
+  .card-post {
+    height: 23em;
+  }
+  .post-title {
+    font-size: 3em !important;
+  }
+}
+
+
+.card-title a {
+  -webkit-transition: -webkit-box-shadow .25s;
+  transition: -webkit-box-shadow .25s;
+  transition: box-shadow .25s;
+  transition: box-shadow .25s, -webkit-box-shadow .25s;
+}
+
+.card-title a:hover {
+  color: #000000 !important;
+}
+
+.site-title, .post-title {
+  font-weight: 700;
+  font-family: 'Sacramento', cursive;
+  letter-spacing: .28px;
+}
+
+.container-post {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 96%;
+}
+
+
+  /*
+  When creating your CSS selector,
+  change "brown" to something of your choosing
+  */
+  .waves-effect.waves-blue .waves-ripple {
+    /* The alpha value allows the text and background color
+    of the button to still show through. */
+     background-color: rgba(27, 167, 231, 0.192);
+   }
+    
+   .menu-navigasi {
+      font-weight: 500;
+      font-family: 'Rubik', sans-serif !important;
+      letter-spacing: .28px;
+   }
+   @import url(https://fonts.googleapis.com/earlyaccess/amiri.css);
+   .amiri{font-family: 'Amiri', serif;}
+
+   #map {
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+  }
